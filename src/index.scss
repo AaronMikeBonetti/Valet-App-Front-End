@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+    background: url("imgs/machu_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+
+    
+
+
+    .todo-container {
+
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 30% 1fr 30%;
+        grid-template-rows: 10px 140px 50px 700px 200px;
+        height: 100vh;
+        
+        .add-todo-container{
+            grid-column: 2/3;
+            text-align: center;
+            background: #555358;
+            grid-row: 2/3;
+            
+
+            .add-todo-header{
+                color: #31493C;
+                font-size: 40px;
+                padding: 0;
+                margin: 0;
+                text-decoration: underline;
+            }
+            .add-todo-input{
+                    
+                border: none;
+                height: 30px;
+                width: 50%;
+                font-size: 20px;
+                margin: 15px 25%;
+                padding: 2px;
+                background: #E8F1F2;
+                color: #7B7263;
+                outline: none;
+            }
+            .submit-btn{
+                width: 40%;
+                margin: 0px 5%;
+                color: black;
+                background: #7B7263;
+                border: none;
+                outline: none;
+                
+            }
+            .reset-btn{
+                width: 40%;
+                margin: 0px 5%;
+                color: black;
+                background: #31493C;
+                border: none;
+                outline: none;
+                
+            }
+            
+        }
+
+        .item-container {
+
+            background: #555358;
+            grid-column: 2/3;
+            grid-row: 4/5;
+            padding: 0px 40px 80px 40px;
+            box-shadow: 0px 1px rgba(0, 0, 0, 0.383),
+                0px 15px 0 -5px #555358,
+                0px 15px 0 -4px rgba(0, 0, 0, 0.438),
+                0px 30px 0 -9px  #555358,
+                0px 30.5px 0 -9px rgb(0, 0, 0);
+
+
+            div {
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+                font-size: 30px;
+                cursor: pointer; 
+
+            }
+
+            
+
+            .not-active{
+                text-decoration: line-through;
+                color:#E8F1F2;
+                animation: not-active 1s;
+                font-style: oblique;
+                
+            }
+
+            .active{
+                text-decoration: none;
+                color: #31493C;
+                animation: active 1s;
+            }
+            .delete-btn{
+                width: 10%;
+                padding: 0px;
+                font-size: 30px;
+                text-align: center;
+                border: none;
+                outline: none;
+                color: black;
+                background: #7B7263;
+                animation: active 1s;
+            }
+            
+            @keyframes not-active {
+                0%{
+                    opacity: 0;
+                     
+                }
+             
+                100%{
+                   opacity: 1;
+                }
+                
+            }
+            @keyframes active {
+                0%{
+                    opacity: 0;
+                }
+             
+                100%{
+                   opacity: 1;
+                }
+                
+            }
+        }
+    }
+}
