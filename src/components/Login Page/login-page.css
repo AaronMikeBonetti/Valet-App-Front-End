@@ -9,7 +9,6 @@
 .login-page__container {
   height: 100vh;
   width: auto;
-  padding: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20px 1fr 20px;
@@ -46,7 +45,7 @@
   width: 300px;
   display: -ms-grid;
   display: grid;
-  margin: 20px;
+  margin: auto;
   padding: 10px;
   padding-top: 25px;
   -ms-grid-columns: 2fr 1fr 3fr 1fr;
