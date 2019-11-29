@@ -1,3 +1,105 @@
-.login-page-container{
-    
+@import '../../index.scss';
+
+.login-page__container{
+    height: 100vh;
+    width: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 0.2fr 1fr 0.5fr 2fr 1fr;
+    background-image:
+url('../../assets/login_page_img.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .login-page__logo{
+        background: red;
+        grid-column: 2;
+        grid-row: 2;
+        background: url('../../assets/logo.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .login-page__form__container{
+       backdrop-filter: blur(4px);
+       background: rgba(255, 255, 255, 0.685);
+       grid-row: 4;
+       grid-column: 2;
+       height: 220px;
+       width: 300px;
+       display: grid;
+       margin: 20px;
+       padding: 10px;
+       padding-top: 25px;
+       grid-template-columns: 2fr 1fr 3fr 1fr;
+       grid-template-rows: 40px 40px 1fr;
+       gap: 20px;
+
+        .login-page__form__user-icon{
+            background:url('../../assets/user-logo.webp');
+            height: 60%;
+            margin-top: 10px;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            grid-row: 1;
+            grid-column: 1;
+            opacity: 0.6;
+        }
+        .login-page__form__password-icon{
+            background:url('../../assets/password-icon.webp');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 60%;
+            margin-top: 10px;
+            width: auto;
+            grid-column: 1;
+            grid-row: 2;
+            opacity: 0.6;
+        }
+        .login-page__form__username,
+        .login-page__form__password{
+            background: rgba(139, 71, 71, 0);
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+            outline: none;
+            height: 70%;
+            margin: auto;
+        }
+        .login-page__form__username{
+            grid-column: 2/4;
+            grid-row: 1;
+        }
+        
+        .login-page__form__password{
+            grid-column: 2/4;
+            grid-row: 2;
+        }
+        .login-page__form__username::placeholder,
+        .login-page__form__password::placeholder{
+            color: rgba(0, 0, 0, 0.5);
+            font-family: $main-font;
+            font-weight: 300;
+            
+        }
+        .login-page__form__submit-button{
+            width: 80%;
+            margin: auto;
+            height: 40px;
+            grid-column: 1/-1;
+            grid-row: 3;
+            border: none;
+            background: rgba(255, 196, 0, 0.794);
+            color: rgb(255, 255, 255);
+            font-family: $main-font;
+            font-weight: 800;
+            outline: none;
+            
+        }
+    }
 }

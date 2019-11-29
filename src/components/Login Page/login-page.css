@@ -1,1 +1,157 @@
-/* No CSS *//*# sourceMappingURL=login-page.css.map */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-page__container {
+  height: 100vh;
+  width: auto;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 1fr 20px;
+      grid-template-columns: 20px 1fr 20px;
+  -ms-grid-rows: 0.2fr 1fr 0.5fr 2fr 1fr;
+      grid-template-rows: 0.2fr 1fr 0.5fr 2fr 1fr;
+  background-image: url("../../assets/login_page_img.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-page__container .login-page__logo {
+  background: red;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background: url("../../assets/logo.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.login-page__container .login-page__form__container {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.685);
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  height: 220px;
+  width: 300px;
+  display: -ms-grid;
+  display: grid;
+  margin: 20px;
+  padding: 10px;
+  padding-top: 25px;
+  -ms-grid-columns: 2fr 1fr 3fr 1fr;
+      grid-template-columns: 2fr 1fr 3fr 1fr;
+  -ms-grid-rows: 40px 40px 1fr;
+      grid-template-rows: 40px 40px 1fr;
+  gap: 20px;
+}
+
+.login-page__container .login-page__form__container .login-page__form__user-icon {
+  background: url("../../assets/user-logo.webp");
+  height: 60%;
+  margin-top: 10px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  opacity: 0.6;
+}
+
+.login-page__container .login-page__form__container .login-page__form__password-icon {
+  background: url("../../assets/password-icon.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 60%;
+  margin-top: 10px;
+  width: auto;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  opacity: 0.6;
+}
+
+.login-page__container .login-page__form__container .login-page__form__username,
+.login-page__container .login-page__form__container .login-page__form__password {
+  background: rgba(139, 71, 71, 0);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  outline: none;
+  height: 70%;
+  margin: auto;
+}
+
+.login-page__container .login-page__form__container .login-page__form__username {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.login-page__container .login-page__form__container .login-page__form__password {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.login-page__container .login-page__form__container .login-page__form__username::-webkit-input-placeholder,
+.login-page__container .login-page__form__container .login-page__form__password::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.login-page__container .login-page__form__container .login-page__form__username:-ms-input-placeholder,
+.login-page__container .login-page__form__container .login-page__form__password:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.login-page__container .login-page__form__container .login-page__form__username::-ms-input-placeholder,
+.login-page__container .login-page__form__container .login-page__form__password::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.login-page__container .login-page__form__container .login-page__form__username::placeholder,
+.login-page__container .login-page__form__container .login-page__form__password::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.login-page__container .login-page__form__container .login-page__form__submit-button {
+  width: 80%;
+  margin: auto;
+  height: 40px;
+  grid-column: 1/-1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  border: none;
+  background: rgba(255, 196, 0, 0.794);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  outline: none;
+}
+/*# sourceMappingURL=login-page.css.map */
