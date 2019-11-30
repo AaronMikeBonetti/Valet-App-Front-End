@@ -1,7 +1,7 @@
 import React, { useReducer, createContext } from 'react'
 import reducer from './reducers/reducer'
 
-let Context = createContext()
+export const Context = createContext()
 
 export default function Store(props){
 

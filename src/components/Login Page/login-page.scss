@@ -3,7 +3,6 @@
 .login-page__container{
     height: 100vh;
     width: auto;
-    
     display: grid;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows: 0.2fr 1fr 0.5fr 2fr 1fr;
@@ -14,7 +13,7 @@ url('../../assets/login_page_img.webp');
     background-repeat: no-repeat;
 
     .login-page__logo{
-        background: red;
+        
         grid-column: 2;
         grid-row: 2;
         background: url('../../assets/logo.webp');
@@ -94,11 +93,12 @@ url('../../assets/login_page_img.webp');
             grid-column: 1/-1;
             grid-row: 3;
             border: none;
-            background: rgba(255, 196, 0, 0.794);
+            background: rgba(99, 100, 100, 0.794);
             color: rgb(255, 255, 255);
             font-family: $main-font;
             font-weight: 800;
             outline: none;
+            cursor: pointer;
             
         }
     }
